@@ -20,7 +20,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed" if is_cancel_popup else "auto"
 )
-
+st.error(f"👉 네이버 등록용 현재 서버 IP: {requests.get('https://api.ipify.org').text}")
 # ==========================================
 # 0. 사운드 재생 HTML/JS 헬퍼 함수
 # ==========================================
